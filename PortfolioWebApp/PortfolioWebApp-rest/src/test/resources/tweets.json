@@ -1,0 +1,52 @@
+[
+        {
+            "text": "Who won the debate?",
+            "user": {
+                "name": "Daenerys Targaryen",
+                "imageUrl": "http://pbs.twimg.com/profile_images/1117967801652617216/i8PWXebo_normal.jpg"
+            },
+            "retweetedStatus": null
+        },
+        {
+            "text": "RT @Daenerys: March 1st vs April 1st https://t.co/kebokQZTr7",
+            "user": {
+                "name": "Daenerys Targaryen",
+                "imageUrl": "http://pbs.twimg.com/profile_images/1117967801652617216/i8PWXebo_normal.jpg"
+            },
+            "retweetedStatus": {
+                "user": {
+                    "name": "Daenerys Targaryen",
+                    "imageUrl": "http://pbs.twimg.com/profile_images/1117967801652617216/i8PWXebo_normal.jpg"
+                }
+            }
+        },
+        {
+            "text": "March 1st vs April 1st https://t.co/kebokQZTr7",
+            "user": {
+                "name": "Daenerys Targaryen",
+                "imageUrl": "http://pbs.twimg.com/profile_images/1117967801652617216/i8PWXebo_normal.jpg"
+            },
+            "retweetedStatus": null
+        },
+        {
+            "text": "RT @GRRM: 2020 was directed by me.",
+            "user": {
+                "name": "Daenerys Targaryen",
+                "imageUrl": "http://pbs.twimg.com/profile_images/1117967801652617216/i8PWXebo_normal.jpg"
+            },
+            "retweetedStatus": {
+                "user": {
+                    "name": "George RR Martin",
+                    "imageUrl": "http://pbs.twimg.com/profile_images/1336734869867683851/ki2vpebt_normal.jpg"
+                }
+            }
+        },
+        {
+            "text": "👀 https://t.co/QK0tn7VWX0",
+            "user": {
+                "name": "Daenerys Targaryen",
+                "imageUrl": "http://pbs.twimg.com/profile_images/1117967801652617216/i8PWXebo_normal.jpg"
+            },
+            "retweetedStatus": null
+        }
+    ]

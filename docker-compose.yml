@@ -1,0 +1,34 @@
+version: "2"
+
+services:
+  crud:
+    build:
+      context: ./PortfolioWebApp/PortfolioWebApp-rest
+      args:
+          - PROJECT=PortfolioWebApp-rest
+          - VERSION=1.0-SNAPSHOT
+    env_file:
+      - .env_secret.env
+    expose:
+        - 92
+    ports:
+      - '92:92'
+    volumes:
+      - ./PortfolioWebApp/PortfolioWebApp-rest/:/home/PortfolioWebApp-rest/
+
+  client:
+    build:
+      context: ./portfolio-web
+      args:
+          - CONFIGURATION=production
+          - BACKEND_HOST=198.168.99.100
+    env_file:
+      - .env_secret.env 
+    expose:
+      - 80
+    ports:
+      - '80:80'
+    volumes:
+        - ./portfolio-web/:/home/portfolio-web/
+    depends_on:
+      - crud    

@@ -1,0 +1,36 @@
+## 
+# Archivo de configuraciones comunes por defecto, en este archivo se encuentran las caracteristicas
+# comunes por defecto para ejecutar la aplicacion en un cluster, por este motivo se deben usar urls
+# con los nombres del servicio en el cluster Pej: http://autorizacion/autorizador/api por defecto
+# estos servicios se ejecutan por el puerto 80, asi que no es necesario especificar puerto.
+##
+spring:
+    application:
+        name: Zemoga challenge
+    main.allow-bean-definition-overriding: true    
+    datasource:
+        url: jdbc:mysql://${DB_DOMAIN:zemoga-test-db.crhpedy9xxto.us-east-1.rds.amazonaws.com}:${DB_PORT:3306}/${DB_NAME:zemoga_test_db}
+        username: ${DB_USER:zemoga_test_db}
+        password: ${DB_PASSWORD:Zem0ga.101}
+    jpa:
+        generate-ddl: false
+        properties:
+            hibernate:
+                show_sql: false
+                use_sql_comments: false
+                temp.use_jdbc_metadata_defaults: true
+                dialect: org.hibernate.dialect.PostgreSQL95Dialect
+    liquibase:
+        enabled: true
+        change-log: classpath:db/master.xml
+twitter:
+    AccessToken: 1220032047516921859-otvXjhExyUTZ5GLxssc9h5ORqtPZja
+    AccessTokenSecret: tmJKqM4ORfQW6CH7wIVV8uKNpmSEmeFAP8lYwGb19uYjj
+    APIKey: KRy7l0v8wex3w8Sy5zThai3Ea
+    APISecretKey: X2eBm0Y21kYEuR74W3Frqc2JVIizOj8Q1EVGatDsEVVEJo0ucu
+    APIURL: https://api.twitter.com/1.1/
+    
+server:
+    servlet.context-path: /v1/api
+    address: 0.0.0.0
+    port: 92
