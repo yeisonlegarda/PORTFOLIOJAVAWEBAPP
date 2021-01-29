@@ -21,7 +21,7 @@ services:
       context: ./portfolio-web
       args:
           - CONFIGURATION=production
-          - BACKEND_HOST=198.168.99.100
+          - BACKEND_HOST=127.0.0.1
     env_file:
       - .env_secret.env 
     expose:
